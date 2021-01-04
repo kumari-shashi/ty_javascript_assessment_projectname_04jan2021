@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+     crossorigin="anonymous">
+
+    <style>
+        body{
+            background-image: url("https://cdn.pixabay.com/photo/2015/03/26/09/47/sky-690293__340.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #input-box
+        {
+            width: 180px;
+            height: 40px;
+            margin-left: 1000px;
+            margin-top: 20px;
+            background-color: azure;
+            padding: 10px;
+        }
+        .city
+        {
+            font-size: 30px;
+        }
+        .app-main
+        {
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+        .vl
+        {
+            border-left:8px solid white;
+            height: 1200px;
+        }
+        
+    </style>
+
+</head>
+<body>
+<div class="app-main">
+    <div class="searchBox">
+        <i class="fas fa-search"></i><input type="text" name="search" id="input-box" placeholder="search city">
+    </div>
+    <div class="weather-body">
+        <div class="weather" id="weather">MIST</div>
+        <div class="location-details">
+        <div class="city" id="city">BANGALORE, INDIA</div>
+     </div>
+     <div class="weather-status">
+         <table>
+             <tr>
+                 <td><span class="display-2">68<sup>.F</sup></span></td>
+                 <td><span class="vl" style="height: 60px;"></span></td>
+                 <td>
+                     <span>FEELS LIKE:</span><br>
+                     <span>WIND:</span><br>
+                     <span>HUMIDITY:</span>
+            </td>
+             </tr>
+         </table>
+     </div>
+    </div>
+</div>
+  <script src="./weather.js"></script>  
+</body>
+</html>
